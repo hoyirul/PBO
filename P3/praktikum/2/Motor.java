@@ -13,13 +13,17 @@ public class Motor{
 
     public void tambahKecepatan(){
         if(kontakOn == true){
-            kecepatan += 5;
+            if(kecepatan >= 100){
+                System.out.println("Mohon maaf kecepatan maksimal hanya 100KM \n");
+            }else{
+                kecepatan += 5;
+            }
         }else{
             System.out.println("Kecepatan tidak bisa bertambah karena mesin Off!! \n");
         }
     }
 
-    public void tambahKecepatan(){
+    public void kurangiKecepatan(){
         if(kontakOn == true){
             kecepatan -= 5;
         }else{
@@ -28,11 +32,15 @@ public class Motor{
     }
 
     public void printStatus(){
-        if(kontakOn == true){
-            System.out.println("Kontak On");
+        if(kecepatan >= 100){
+            System.out.println("Turunin kecepatan, kecepatan sudah maksimal \n");
         }else{
-            System.out.println("Kontak Off");
+            if(kontakOn == true){
+                System.out.println("Kontak On");
+            }else{
+                System.out.println("Kontak Off");
+            }
+            System.out.println("Kecepatan " + kecepatan + "\n");
         }
-        System.out.println("Kecepatan " + kecepatan + "\n");
     }
 }
