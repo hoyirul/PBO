@@ -1,0 +1,8 @@
+saya adalah seorang programmer saat ini mendapatan seorang klien, klien saya adalah toko persewaan permainan bayi
+(tempat tidur, permainan, stoler, gendongan) yang di sewakan, informasi yang dapat saat ini adalah untuk persewaan dibutuhkan jaminan
+1. jaminan KTP atau SIM (Penyewa)
+2. Domisili harus Kota malang
+3. semua harga sama yaitu 50K /day
+4. penyewa ini haruslah terdata tidak ada sistem member
+-> entitas pemilik ,menyewa dan barang yang disewakan
+buatkan class diagram
