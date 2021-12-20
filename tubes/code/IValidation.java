@@ -1,4 +1,4 @@
 public interface IValidation{
-    public boolean loginProcess();
-    public void getErrors();
+    public abstract boolean loginProcess();
+    public abstract void getErrors();
 }

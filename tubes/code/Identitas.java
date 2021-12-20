@@ -1,5 +1,3 @@
 public abstract class Identitas{
-    public void mempunyaiKTP(){
-        
-    }
+    public abstract void mempunyaiKTP();
 }

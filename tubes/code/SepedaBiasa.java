@@ -1,6 +1,5 @@
 public class SepedaBiasa extends Sepeda{
     private String jenis, warna;
-    private Merk merk;
 
     public SepedaBiasa(String namaSepeda, double harga, String jenis, String warna){
         super(namaSepeda, harga);
@@ -21,10 +20,12 @@ public class SepedaBiasa extends Sepeda{
     }
 
     public void info(){
+        System.out.println("------------------------------------");
         System.out.println("Nama Sepeda  : " + namaSepeda);
         System.out.println("Merk Sepeda  : " + merk.getNamaMerk());
         System.out.println("Tahun Sepeda : " + merk.getTahun());
         System.out.println("Jenis Sepeda : " + this.jenis);
         System.out.println("Warna Sepeda : " + this.warna);
+        System.out.println("------------------------------------");
     }
 }

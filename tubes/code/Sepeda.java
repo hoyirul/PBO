@@ -1,6 +1,7 @@
 public class Sepeda{
     protected String namaSepeda;
     protected double harga;
+    protected Merk merk;
 
     public Sepeda(String namaSepeda, double harga){
         this.namaSepeda = namaSepeda;
@@ -10,4 +11,8 @@ public class Sepeda{
     public double getHarga(){
         return harga;
     }
+
+    public void setMerk(Merk merk){}
+
+    public void info(){}
 }

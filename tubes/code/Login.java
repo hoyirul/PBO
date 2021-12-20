@@ -1,24 +1,26 @@
 public class Login implements IValidation{
     private String id, password;
     private boolean _login;
-    private Pelanggan pelanggan;
+    private Pemilik pemilik;
+
+    public Login(){}
 
     public Login(String id, String password){
         this.id = id;
         this.password = password;
     }
 
-    public void setPelanggan(Pelanggan pelanggan){
-        this.pelanggan = pelanggan;
+    public void setPemilik(Pemilik pemilik){
+        this.pemilik = pemilik;
     }
 
-    public Pelanggan getPelanggan(){
-        return pelanggan;
+    public Pemilik getPemilik(){
+        return pemilik;
     }
 
     @Override
     public boolean loginProcess(){
-        if(pelanggan.getID().equals(id) && pelanggan.getPassword().equals(password)){
+        if(pemilik.getID().equals(id) && pemilik.getPassword().equals(password)){
             _login = true;
         }else{
             _login = false;
@@ -36,10 +38,14 @@ public class Login implements IValidation{
         }
     }
 
+    public boolean isLogin(){
+        return _login;
+    }
+
     public void info(){
         if(_login == true){
             getErrors();
-            pelanggan.info();
+            pemilik.info();
         }else{
             getErrors();
         }
